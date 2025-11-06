@@ -61,10 +61,7 @@ university-workstation-management/
  app.py
  README.txt
  requirements.txt
- sql/
-  schema.sql
-  procedures.sql
-  functions.sql
+ database.sql
 
 Installation
 1. Clone repository:
@@ -80,15 +77,13 @@ Installation
    pip install -r requirements.txt
 
 4. Import MySQL schema:
-   SOURCE sql/schema.sql;
-   SOURCE sql/functions.sql;
-   SOURCE sql/procedures.sql;
+   SOURCE database.sql;
 
-5. Update credentials in app.py:
+6. Update credentials in app.py:
    host="localhost"
    database="university_workstation"
 
-6. Run the application:
+7. Run the application:
    streamlit run app.py
 
 How It Works
